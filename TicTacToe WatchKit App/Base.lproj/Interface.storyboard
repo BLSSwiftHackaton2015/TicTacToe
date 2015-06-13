@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--board2-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller backgroundImage="board2" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TicTacToe_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.30000000000000016" alignment="center" id="lCJ-O7-Oq1">
+                            <items>
+                                <button width="0.33000000000000002" height="1" alignment="left" id="z3S-cW-Hfv">
+                                    <connections>
+                                        <action selector="actionBtnLeftTop" destination="AgC-eL-Hgc" id="fID-4e-czC"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" id="NCs-RX-tbh">
+                                    <connections>
+                                        <action selector="actionBtnTop" destination="AgC-eL-Hgc" id="hh0-Yl-25E"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" id="CmF-LG-qQS">
+                                    <connections>
+                                        <action selector="actionBtnRightTop" destination="AgC-eL-Hgc" id="aP7-Ci-AfE"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.30000000000000016" alignment="center" id="J1p-k0-gha">
+                            <items>
+                                <button width="0.33000000000000002" height="1" alignment="left" id="khR-RM-h26">
+                                    <connections>
+                                        <action selector="actionLeft" destination="AgC-eL-Hgc" id="bch-G5-14q"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" id="gFP-7k-eIO">
+                                    <connections>
+                                        <action selector="actionCenter" destination="AgC-eL-Hgc" id="qt1-2Y-ysj"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" id="jgT-IZ-O6D">
+                                    <connections>
+                                        <action selector="actionRight" destination="AgC-eL-Hgc" id="r61-xf-nSz"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.29999999999999999" alignment="center" id="Vub-cb-TUE">
+                            <items>
+                                <button width="0.33000000000000002" height="1" alignment="left" id="EnE-Pe-aZz">
+                                    <connections>
+                                        <action selector="actionLeftBottom" destination="AgC-eL-Hgc" id="62j-yl-Nod"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" id="sBz-MA-Sid">
+                                    <connections>
+                                        <action selector="actionBottom" destination="AgC-eL-Hgc" id="eQg-zy-NCf"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" height="1" alignment="left" id="FZs-3m-5kh">
+                                    <connections>
+                                        <action selector="actionRightBottom" destination="AgC-eL-Hgc" id="mGS-aI-unw"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label width="1" alignment="center" text="You Turn" textAlignment="center" id="GwH-dB-Kvh">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="btnBottom" destination="sBz-MA-Sid" id="cac-uP-KSj"/>
+                        <outlet property="btnCenter" destination="gFP-7k-eIO" id="CQp-au-Fha"/>
+                        <outlet property="btnLeft" destination="khR-RM-h26" id="L5a-Fk-494"/>
+                        <outlet property="btnLeftBottom" destination="EnE-Pe-aZz" id="maF-1u-qz0"/>
+                        <outlet property="btnLeftTop" destination="z3S-cW-Hfv" id="eW3-QO-x8W"/>
+                        <outlet property="btnRight" destination="jgT-IZ-O6D" id="Zlx-wM-VEF"/>
+                        <outlet property="btnRightBottom" destination="FZs-3m-5kh" id="AGV-Mi-3wU"/>
+                        <outlet property="btnRightTop" destination="CmF-LG-qQS" id="lJJ-Eg-lRU"/>
+                        <outlet property="btnTop" destination="NCs-RX-tbh" id="o0p-Pf-dio"/>
+                        <outlet property="labelMsg" destination="GwH-dB-Kvh" id="017-sU-N1l"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="190" y="335.75"/>
+        </scene>
+        <!--oswin-->
+        <scene sceneID="e13-2m-VUb">
+            <objects>
+                <controller identifier="oswin" id="3s4-r5-GMa">
+                    <items>
+                        <group width="1" alignment="left" id="CgY-BV-Szf">
+                            <items>
+                                <imageView alignment="center" verticalAlignment="center" image="os" id="P0R-GS-wXk"/>
+                            </items>
+                        </group>
+                        <label alignment="center" text="Win" textAlignment="center" id="yCB-nk-3Dh"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="411" y="213"/>
+        </scene>
+        <!--xswin-->
+        <scene sceneID="mHC-Cq-Yd2">
+            <objects>
+                <controller identifier="xswin" id="kqD-CM-o7z">
+                    <items>
+                        <group width="1" alignment="left" id="71T-C4-0JI">
+                            <items>
+                                <imageView alignment="center" verticalAlignment="center" image="xs" id="7jU-7n-jvb"/>
+                            </items>
+                        </group>
+                        <label alignment="center" text="Win" textAlignment="center" id="bcS-1x-aX2"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="411" y="432"/>
+        </scene>
+    </scenes>
+</document>
