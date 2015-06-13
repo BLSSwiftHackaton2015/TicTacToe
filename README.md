@@ -1,2 +1,2 @@
 # TicTactoe
-Tic tc toe game for Apple Watch
+Tic tac toe game for Apple Watch
